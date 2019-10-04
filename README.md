@@ -8,7 +8,7 @@ composer build
 ```
 
 ## Usage
-All cretentials are parsed from **.my.conf** or **.mytop** and can be overwritten with commadn line options:
+All credentials are parsed from **.my.conf** or **.mytop** and can be overwritten with commadn line options:
 ```
 mytop.phar --user={username} --password={password} --port={port} --host={host}
 ```
