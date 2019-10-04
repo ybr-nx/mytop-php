@@ -1,0 +1,32 @@
+{
+    "name": "ybr-nx/mytop-php",
+    "description": "MySQL / MariaDB process manager",
+    "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable" : true,
+    "require": {
+        "symfony/console": "^4.1",
+        "humbug/box": "^3.0@alpha"
+    },
+    "license": "EUPL",
+    "authors": [
+        {
+            "name": "Ingmar Aasoja",
+            "email": "ingmar@aasoja.ee"
+        }
+    ],
+    "bin": [
+        "bin/mytop"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mytop\\": "src/"
+        }
+    },
+    "scripts": {
+        "build" : [
+            "@composer install --ignore-platform-reqs",
+            "@php vendor/bin/box compile"
+        ]
+    }
+}

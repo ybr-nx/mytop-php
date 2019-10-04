@@ -1,0 +1,22 @@
+{
+    "chmod": "0755",
+    "directories": [
+        "src",
+        "vendor"
+    ],
+    "blacklist" : [
+        "Tests",
+        "tests",
+        "docs",
+        "phpunit",
+        "humbug/box",
+        "vendor/bin"
+    ],
+    "check-requirements" : false,
+    "output": "build/mytop",
+    "stub": true,
+    "compression": "GZ",
+    "banner" : [
+        "DZ-Admin"
+    ]
+}
