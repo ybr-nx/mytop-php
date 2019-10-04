@@ -6,3 +6,9 @@ Simple test to imitate mytop mysql utility writte in php. This is just a test an
 ```
 composer build
 ```
+
+## Usage
+All cretentials are parsed from **.my.conf** or **.mytop** and can be overwritten with commadn line options:
+```
+mytop.phar --user={username} --password={password} --port={port} --host={host}
+```
